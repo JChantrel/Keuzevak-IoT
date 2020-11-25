@@ -9,4 +9,5 @@ Voor dit project worden de volgende spullen gebruikt
  * Grove - 4 pin Female Jumper to Grove 4 pin Conversion Cable
  * MCP3008 - 8-kanaals ADC met SPI-interface
  * Spullen voor shield/hat
+ 
 Er is voor een capacitieve sensor gekozen omdat deze niet corroderen na lang gebruik. Hier horen de juiste kabels bij. De MCP3008 is nodig omdat de sensor een anloge output heeft. deze kan de Raspberry niet uitlezen. Deze elektroinca zal waarschijnlijk eerst op een breadboard getest worden als alles werkt wordt het gesoldeerd op een shield/hat voor de Raspberry.
