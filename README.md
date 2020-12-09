@@ -15,3 +15,5 @@ Er is voor een capacitieve sensor gekozen omdat deze niet corroderen na lang geb
 # Raspberry setup
 
 ![](Images/Raspberry_Setup.jpeg)
+
+# Thinger.io
