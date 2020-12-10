@@ -18,3 +18,6 @@ https://docs.thinger.io/quick-sart/devices/linux
 
 led aan uit met thinger.io
 https://community.thinger.io/t/figuring-out-thinger-platform-to-control-raspberry-pi-led/113/2
+
+Verbinding maken tussen Raspberry Pi en Azure IoT Hub
+https://docs.microsoft.com/nl-nl/azure/iot-hub/iot-hub-raspberry-pi-kit-node-get-started
