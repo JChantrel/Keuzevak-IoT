@@ -1,3 +1,3 @@
-/home/pi/thinger_client/build/CMakeFiles/rebuild_cache.dir
-/home/pi/thinger_client/build/CMakeFiles/thinger.dir
-/home/pi/thinger_client/build/CMakeFiles/edit_cache.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/build/CMakeFiles/thinger.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/build/CMakeFiles/edit_cache.dir

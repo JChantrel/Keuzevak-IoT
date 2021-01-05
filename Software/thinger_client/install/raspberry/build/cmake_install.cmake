@@ -1,4 +1,4 @@
-# Install script for directory: /home/pi/thinger_client
+# Install script for directory: /home/pi/Keuzevak-IoT/Software/thinger_client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/thinger"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/pi/thinger_client/install/raspberry/build/thinger")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/build/thinger")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/thinger" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/thinger")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -62,7 +62,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/etc/init.d" TYPE FILE FILES "/home/pi/thinger_client/install/raspberry/thinger")
+file(INSTALL DESTINATION "/etc/init.d" TYPE FILE FILES "/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/thinger")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -73,5 +73,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pi/thinger_client/install/raspberry/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

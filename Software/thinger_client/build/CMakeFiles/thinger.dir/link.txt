@@ -1,1 +1,1 @@
-/usr/bin/c++   -std=c++11 -O3 -DNDEBUG  -rdynamic CMakeFiles/thinger.dir/src/main.cpp.o CMakeFiles/thinger.dir/src/mmapGpio.cpp.o  -o thinger -lssl -lcrypto 
+/usr/bin/c++   -std=c++11 -lbcm2835 -O3 -DNDEBUG  -rdynamic CMakeFiles/thinger.dir/src/main.cpp.o CMakeFiles/thinger.dir/src/mmapGpio.cpp.o  -o thinger -lssl -lcrypto 

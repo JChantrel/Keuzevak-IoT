@@ -1,7 +1,7 @@
-/home/pi/thinger_client/install/raspberry/build/CMakeFiles/install/strip.dir
-/home/pi/thinger_client/install/raspberry/build/CMakeFiles/edit_cache.dir
-/home/pi/thinger_client/install/raspberry/build/CMakeFiles/install.dir
-/home/pi/thinger_client/install/raspberry/build/CMakeFiles/rebuild_cache.dir
-/home/pi/thinger_client/install/raspberry/build/CMakeFiles/thinger.dir
-/home/pi/thinger_client/install/raspberry/build/CMakeFiles/list_install_components.dir
-/home/pi/thinger_client/install/raspberry/build/CMakeFiles/install/local.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/build/CMakeFiles/install/strip.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/build/CMakeFiles/edit_cache.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/build/CMakeFiles/install.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/build/CMakeFiles/thinger.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/build/CMakeFiles/list_install_components.dir
+/home/pi/Keuzevak-IoT/Software/thinger_client/install/raspberry/build/CMakeFiles/install/local.dir

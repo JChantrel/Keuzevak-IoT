@@ -23,6 +23,7 @@
 
 #include "thinger/thinger.h"
 #include "mmapGpio.h"
+#include "bcm2835.h"
 
 #define USER_ID             "JChantrel"
 #define DEVICE_ID           "raspberry"
@@ -38,6 +39,8 @@ int main(int argc, char *argv[])
     thinger_device thing(USER_ID, DEVICE_ID, DEVICE_CREDENTIAL);
 
     // define thing resources here. i.e, this is a sum example
+    
+    bcm2835_spi_begin();
 
     rpiGpio.setPinDir(LED_PIN, mmapGpio::OUTPUT);
     rpiGpio.setPinDir(BUTTON_PIN, mmapGpio::INPUT);
@@ -55,7 +58,7 @@ int main(int argc, char *argv[])
     };
     
     thing["button"] >> [](pson& out){
-        out = rpiGpio.readPin(BUTTON_PIN) ? true : false;
+        out = rpiGpio.readPin(BUTTON_PIN) ? 1 : 0;
     };
 
     thing.start();
