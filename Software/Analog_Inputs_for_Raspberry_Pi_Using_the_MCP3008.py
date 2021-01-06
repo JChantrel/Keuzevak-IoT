@@ -28,7 +28,7 @@ slope = 2.48
 intercept = 0
 
 while True:
-    # we'll assume that the pot didn't move
+    # we'll assume that the value didn't change
     value_changed = False
 
     # read the analog pin
@@ -41,19 +41,17 @@ while True:
         value_changed = True
 
     if value_changed:
-        # convert 16bit adc0 (0-65535) trim pot read into 0-100 volume level
+        # convert 16bit adc0 (0-65535) read into voltage level
         voltage = chan0.voltage
         
         water_cont = ((1.0/voltage)*slope)+intercept
 
-        # set OS volume playback volume
+        # print calculated values
         print('ADC = %i' % value)
         print('Voltage = %.2f V' % voltage)
         print('Water = %.2f cm^3/cm^3' % water_cont)
-        #set_vol_cmd = 'sudo amixer cset numid=1 -- {volume}% > /dev/null'.format(volume = voltage)
-        #os.system(set_vol_cmd)
 
-        # save the potentiometer reading for the next loop
+        # save the reading for the next loop
         last_read = value
 
     # hang out and do nothing for a half second
