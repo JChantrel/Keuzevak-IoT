@@ -15,9 +15,9 @@ def thermometer():
 			print response.status, response.reason
 			data = response.read()
 			conn.close()
+			time.sleep(15)
 		except:
 			print"connection failed"
-			time.sleep(15)
 		break
 if __name__=="__main__":
 	while True:

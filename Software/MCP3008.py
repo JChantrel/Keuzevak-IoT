@@ -6,6 +6,10 @@ import board
 import adafruit_mcp3xxx.mcp3008 as MCP
 from adafruit_mcp3xxx.analog_in import AnalogIn
 
+import http.client
+import urllib
+import time
+
 # create the spi bus
 spi = busio.SPI(clock=board.SCK, MISO=board.MISO, MOSI=board.MOSI)
 
@@ -26,6 +30,8 @@ tolerance = 250     # to keep from being jittery we'll only change volume when t
                     
 slope = 2.48
 intercept = 0
+
+key = "S7F39UVBAOZOOFQ0"
 
 while True:
     # we'll assume that the value didn't change
@@ -54,5 +60,18 @@ while True:
         # save the reading for the next loop
         last_read = value
 
-    # hang out and do nothing for a half second
-    time.sleep(0.5)
+    # send value to thingspeak    
+    params = urllib.parse.urlencode({'field1':water_cont, 'key':key})
+    headers = {"Content-typZZe": "application/x-www-form-urlencoded","Accept":"text/plain"}
+    conn = http.client.HTTPConnection("api.thingspeak.com:80")
+    try:
+        conn.request("POST", "/update", params,headers)
+        responce = conn.getresponse()
+        print (water_cont)
+        print (response.status, response.reason)
+        data = response.read()
+        conn.close()
+    except:
+        print("connection failed")
+        time.sleep(15)
+
