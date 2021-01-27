@@ -45,4 +45,4 @@ Bij de Jumbo vond ik een mooi plantje, een kalanchoe. Dat leek me een mooie kand
 Om een notificatie te laten sturen wanneer de plant water nodig heeft wordt er gebruik gemaakt van Pushover. De volgende [tutorial](https://www.hackster.io/matlab-iot/real-time-notifications-with-pushover-mqtt-and-thingspeak-7b87df) is gevold om de in te stellen, alleen stap 5 is overgeslagen omdat deze niet van toepassing is.
 
 # Demo
-In deze [demo](Plant demo small.mp4) is te zien wat het resultaat is van het project.
+In deze [demo](Plant%20demo%20small.mp4) is te zien wat het resultaat is van het project.
