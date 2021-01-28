@@ -14,13 +14,16 @@ Er is voor een capacitieve sensor gekozen omdat deze niet corroderen na lang geb
 
 # Raspberry setup
 Door gebruik te maken van de imager van raspberry pi zelf was het erg simpel raspian op raspberry te zetten.
+
 ![](Images/Raspberry_Setup.jpeg)
 
 # Hello World
 Eerste proramma wat veel gebruikt wordt in de code wereld is een "Hello World" programma. Hierbij was dat niet helemaal van toepassing, in plaats daarvan heb ik een klein stukje code geschreven dat een ledje laat knipperen. Hieronder is de test te zien.
+
 ![](Images/Blink_Test.jpeg)
 
 Daarna is er ook nog een knop aan toegevoed om te kijken of daarmee het ledje aangezet kan worden. Dat is hieronder te zien.
+
 ![](Images/Button_Setup.jpeg)
 
 # Analog to digital
@@ -33,20 +36,26 @@ Na wat onderzoek gedaan te hebben over dashboards voor data kwam ik uit op Thing
 Ik maakte een thingspeak account aan en zocht naar een test programmatje wat ik kon gebruiken om te kijken of het allemaal werkte. Ik had er een gevonden, deze is te vinden in de software map genaamd cpu.py. Deze stuurt elke 15 seconde de cpu temperatuur naar thingspeak. Ik moest alleen de key van mijn channel in te vullen en het delay van 15 seconde in programeren en het werkte.
 Volgende stap was om een conversie te doen van de spanning die gemeten wordt door de raspberry naar het daadwerkelijk vochtgehalte van de grond. Hiervoor heb ik een mooi artikel gevonden die het stap voor stap uitlegt. Om het goed te berekenen heb ik eigenlijk een test plant nodig om daar wat grond van te pakken om de sensor mee te eiken. Die heb ik nog niet dus heb gekeken hoe de algemene vergelijking er uit ziet en die in de software gezet. de conversie was dus geimlementeerd maar had nog niet de juiste waardes. Die komen later wel
 Nu kon ik het verzenden van data naar thingspeak implementeren in het sensor programma. Ik had het deel van het programma wat de data verzond gekopieerd en geplakt alleen gaf deze nu errors. Het probleem was dat cpu.py in python2 staat geschreven en het sensor programma in python3. Gelukkig betekende dat alleen dat er van librarys anders genoemd moesten worden. Na dat alles aangepast was werkte het gewoon naar behoren.
+
 ![](Images/Thingspeak.PNG)
 
 Hier is de data te zien van een paar dagen. Halverwege is de plant water gegeven en er is een paar dagen niets verzonden. Dit omdat het internet gereset was maar de raspberry niet gereset is.
 
 # Hat
 Nu dit allemaal goed werkt is alle elektronica op een lege hat voor raspberry gesoldeerd zodat het er allemaal wat netter uit ziet en wat robuster is.
+
 ![](Images/Raspberry_met_Hat.jpeg)
 
 # Senor eiken
 Bij de Jumbo vond ik een mooi plantje, een kalanchoe. Dat leek me een mooie kandidaat voor mijn experiment. Toen ik hem gekocht had viel me helaas pas op dat het een vetplant is en dus helemaal niet zo veel water nodig heeft. Dan maar hopen dat me vriendin hem gewoon mooi vind. Thuis heb ik de plant uit de pot gehaald en wat grond van de onderkant gehaald. Deze grond op een in aluminium gewikkelde kartonnen plaat gelegd en in de oven op 50 graden tot deze kurk droog is. Deze droge grond in een beker gestopt en de sensor erin gestopt. Gekeken wat voor waarde de sensor geeft bij deze droge grond. De volgende stap was het toevoegen van water, er werdt elke keer 5 ml toegevoegd, gemengd en gemeten met de sensor. Dit is gedaan tot de grond te nat is, dit is bepaald door mijn zusje de planten expert (ze heeft een opleiding groene detailhandel gedaan, dat leek mij wel een bonafide bron).
+
 ![](Images/excel.PNG)
+
 Nu kon ik met een lineare vergelijking de waarde van de ADC omzeten naar een percentage water. Hierin is 0% de grond uit de oven en 100% de net te natte grond. Om de juiste lineare vergelijking te bepalen moet de door excel gegenereerde vergelijking een kwartslag gedraait worden, door dit wiskundig te doen komt er de volgende vergelijking uit:
 
 `Waterpercentage = -0.00831*ADC + 335.42`
+
+Deze is geimplemeteerd in de software, dat betekent dat de software voor de raspberry compleet is. Deze laatste versie is [hier](Software/MCP3008.py) te vinden in het mapje Software.
 
 # Notificatie
 Om een notificatie te laten sturen wanneer de plant water nodig heeft wordt er gebruik gemaakt van Pushover. De volgende [tutorial](https://www.hackster.io/matlab-iot/real-time-notifications-with-pushover-mqtt-and-thingspeak-7b87df) is gevold om de in te stellen, alleen stap 5 is overgeslagen omdat deze niet van toepassing is.
