@@ -74,3 +74,21 @@ De instellingen van de Thingspeak react.
 
 # Demo
 In deze [demo](Plant%20demo%20small.mp4) is te zien wat het resultaat is van het project.
+
+# Insructie
+ * Installeer de raspberry
+ * Sluit de hardware aan volgens het schema
+
+![](Images/Schema.jpg)
+
+ * Zet het programma MCP3008.py op de raspberry
+ * Zorg dat he programma start met het booten van de raspberry volgens [deze](https://www.raspberrypi-spy.co.uk/2015/02/how-to-autorun-a-python-script-on-raspberry-pi-boot/) tuturial.
+  * Maak een account op Thingsspeak
+  * Maak channel voor de raspberry
+  * Verander de API key op de raspberry naar die van je channel
+  * Implementeer de notificaties met [deze](https://www.hackster.io/matlab-iot/real-time-notifications-with-pushover-mqtt-and-thingspeak-7b87df) tutorial
+  
+  
+ 
+
+# Data-Pipeline
