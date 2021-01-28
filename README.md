@@ -40,7 +40,7 @@ Nu dit allemaal goed werkt is alle elektronica op een lege hat voor raspberry ge
 
 # Senor eiken
 Bij de Jumbo vond ik een mooi plantje, een kalanchoe. Dat leek me een mooie kandidaat voor mijn experiment. Toen ik hem gekocht had viel me helaas pas op dat het een vetplant is en dus helemaal niet zo veel water nodig heeft. Dan maar hopen dat me vriendin hem gewoon mooi vind. Thuis heb ik de plant uit de pot gehaald en wat grond van de onderkant gehaald. Deze grond op een in aluminium gewikkelde kartonnen plaat gelegd en in de oven op 50 graden tot deze kurk droog is. Deze droge grond in een beker gestopt en de sensor erin gestopt. Gekeken wat voor waarde de sensor geeft bij deze droge grond. De volgende stap was het toevoegen van water, er werdt elke keer 5 ml toegevoegd, gemengd en gemeten met de sensor. Dit is gedaan tot de grond te nat is, dit is bepaald door mijn zusje de planten expert (ze heeft een opleiding groene detailhandel gedaan, dat leek mij wel een bonafide bron).
-![](Images/excel.png)
+![](Images/excel.PNG)
 Nu kon ik met een lineare vergelijking de spanning omzeten naar een percentage water. Hierin is 0% de grond uit de oven en 100% de net te natte grond.
 
 # Notificatie
