@@ -60,5 +60,17 @@ Deze is geimplemeteerd in de software, dat betekent dat de software voor de rasp
 # Notificatie
 Om een notificatie te laten sturen wanneer de plant water nodig heeft wordt er gebruik gemaakt van Pushover. De volgende [tutorial](https://www.hackster.io/matlab-iot/real-time-notifications-with-pushover-mqtt-and-thingspeak-7b87df) is gevold om de in te stellen, alleen stap 5 is overgeslagen omdat deze niet van toepassing is.
 
+![](Images/Pushover.PNG)
+
+De applicatie gemaakt in Pushover.
+
+![](Images/Thingspeak HTTP.PNG)
+
+De instellingen van ThingHTTP.
+
+![](Thingspeak react.PNG)
+
+De instellingen van de Thingspeak react.
+
 # Demo
 In deze [demo](Plant%20demo%20small.mp4) is te zien wat het resultaat is van het project.
