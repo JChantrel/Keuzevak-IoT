@@ -64,11 +64,11 @@ Om een notificatie te laten sturen wanneer de plant water nodig heeft wordt er g
 
 De applicatie gemaakt in Pushover.
 
-![](Images/Thingspeak HTTP.PNG)
+![](Images/Thingspeak%20HTTP.PNG)
 
 De instellingen van ThingHTTP.
 
-![](Thingspeak react.PNG)
+![](Thingspeak%20react.PNG)
 
 De instellingen van de Thingspeak react.
 
