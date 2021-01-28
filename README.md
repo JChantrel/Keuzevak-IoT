@@ -34,6 +34,7 @@ Ik maakte een thingspeak account aan en zocht naar een test programmatje wat ik 
 Volgende stap was om een conversie te doen van de spanning die gemeten wordt door de raspberry naar het daadwerkelijk vochtgehalte van de grond. Hiervoor heb ik een mooi artikel gevonden die het stap voor stap uitlegt. Om het goed te berekenen heb ik eigenlijk een test plant nodig om daar wat grond van te pakken om de sensor mee te eiken. Die heb ik nog niet dus heb gekeken hoe de algemene vergelijking er uit ziet en die in de software gezet. de conversie was dus geimlementeerd maar had nog niet de juiste waardes. Die komen later wel
 Nu kon ik het verzenden van data naar thingspeak implementeren in het sensor programma. Ik had het deel van het programma wat de data verzond gekopieerd en geplakt alleen gaf deze nu errors. Het probleem was dat cpu.py in python2 staat geschreven en het sensor programma in python3. Gelukkig betekende dat alleen dat er van librarys anders genoemd moesten worden. Na dat alles aangepast was werkte het gewoon naar behoren.
 ![](Images/Thingspeak.PNG)
+
 Hier is de data te zien van een paar dagen. Halverwege is de plant water gegeven en er is een paar dagen niets verzonden. Dit omdat het internet gereset was maar de raspberry niet gereset is.
 
 # Hat
