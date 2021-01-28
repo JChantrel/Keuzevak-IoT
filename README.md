@@ -89,4 +89,4 @@ In deze [demo](Plant%20demo%20small.mp4) is te zien wat het resultaat is van het
   * Implementeer de notificaties met [deze](https://www.hackster.io/matlab-iot/real-time-notifications-with-pushover-mqtt-and-thingspeak-7b87df) tutorial
   
 # Data-Pipeline
-![](Images/Data pipeline.jpg)
+![](Images/Data%20pipeline.jpg)
