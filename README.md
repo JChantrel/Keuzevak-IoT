@@ -41,7 +41,9 @@ Nu dit allemaal goed werkt is alle elektronica op een lege hat voor raspberry ge
 # Senor eiken
 Bij de Jumbo vond ik een mooi plantje, een kalanchoe. Dat leek me een mooie kandidaat voor mijn experiment. Toen ik hem gekocht had viel me helaas pas op dat het een vetplant is en dus helemaal niet zo veel water nodig heeft. Dan maar hopen dat me vriendin hem gewoon mooi vind. Thuis heb ik de plant uit de pot gehaald en wat grond van de onderkant gehaald. Deze grond op een in aluminium gewikkelde kartonnen plaat gelegd en in de oven op 50 graden tot deze kurk droog is. Deze droge grond in een beker gestopt en de sensor erin gestopt. Gekeken wat voor waarde de sensor geeft bij deze droge grond. De volgende stap was het toevoegen van water, er werdt elke keer 5 ml toegevoegd, gemengd en gemeten met de sensor. Dit is gedaan tot de grond te nat is, dit is bepaald door mijn zusje de planten expert (ze heeft een opleiding groene detailhandel gedaan, dat leek mij wel een bonafide bron).
 ![](Images/excel.PNG)
-Nu kon ik met een lineare vergelijking de spanning omzeten naar een percentage water. Hierin is 0% de grond uit de oven en 100% de net te natte grond.
+Nu kon ik met een lineare vergelijking de waarde van de ADC omzeten naar een percentage water. Hierin is 0% de grond uit de oven en 100% de net te natte grond. Om de juiste lineare vergelijking te bepalen moet de door excel gegenereerde vergelijking een kwartslag gedraait worden, door dit wiskundig te doen komt er de volgende vergelijking uit:
+
+`Waterpercentage = -0.00831*ADC + 335.42`
 
 # Notificatie
 Om een notificatie te laten sturen wanneer de plant water nodig heeft wordt er gebruik gemaakt van Pushover. De volgende [tutorial](https://www.hackster.io/matlab-iot/real-time-notifications-with-pushover-mqtt-and-thingspeak-7b87df) is gevold om de in te stellen, alleen stap 5 is overgeslagen omdat deze niet van toepassing is.
