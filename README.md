@@ -88,7 +88,4 @@ In deze [demo](Plant%20demo%20small.mp4) is te zien wat het resultaat is van het
   * Verander de API key op de raspberry naar die van je channel
   * Implementeer de notificaties met [deze](https://www.hackster.io/matlab-iot/real-time-notifications-with-pushover-mqtt-and-thingspeak-7b87df) tutorial
   
-  
- 
-
 # Data-Pipeline
