@@ -68,7 +68,7 @@ De applicatie gemaakt in Pushover.
 
 De instellingen van ThingHTTP.
 
-![](Thingspeak%20react.PNG)
+![](Images/Thingspeak%20react.PNG)
 
 De instellingen van de Thingspeak react.
 
