@@ -89,4 +89,11 @@ In deze [demo](Plant%20demo%20small.mp4) is te zien wat het resultaat is van het
   * Implementeer de notificaties met [deze](https://www.hackster.io/matlab-iot/real-time-notifications-with-pushover-mqtt-and-thingspeak-7b87df) tutorial
   
 # Data-Pipeline
+Hieronder staat de gerealiseerdde data-pipeline.
+
 ![](Images/Data%20pipeline.jpg)
+
+# Conclusie
+Mijn doel aan het einde van deze module was om te leren werken met Github, raspberry en er achter komen wat Dat Internet of Things is waar iedereen het over heeft. Ik kreeg voor de module het idee dat IoT aan alles geplakt wordt wat een internet verbinding kan maken. Achteraf blijkt dat ook een klein beetje waar. Dit IoT project is naar mijn idee de makkelijkste vorm van IoT. Een vorm van data verzamelen, grond vochtigheid dus, en deze data opslaan en verwerken. Dit is dus een erg simpele data-pipeline.
+Dit probleem hoefde niet perse aangesloten te worden op het internet om opgelost te worden. De sensor lezen en een pompje met water had het ook opgelost, dat zou de elktrotechnicus in mij dan ook graag willen doen. Door het op deze wijze te doen heb ik veel geleerd over de basis van IoT. Ik ben vooral onder de indruk van hoeveelheid software die beschikbaar is voor IoT projecten. Toen ik eraan begon voelde het ook een beetje als een jungle.
+Wat betreft Github. Ik zal vanaf nu Github altijd gebruiken bij het schrijven van software, het is nog even wennen aan al de stappen die nodig zijn om een aanpassing toe te voegen. Maar het werkt zo fijn voor versie beheer. De Rapsberry pi kan ik nu ook toevoegen aan mijn arsenaal van micro controllers/computers.
